@@ -1,14 +1,13 @@
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <nav className="navbar navbar-dark bg-dark">
         <div className="container">
-            <span className="navbar-brand">Static Pages</span>
-            <div className="navbar-nav">
-                <NavLink className="nav-link" to="/pages/about">About</NavLink>
-                <NavLink className="nav-link" to="/pages/contacts">Contacts</NavLink>
-                <NavLink className="nav-link" to="/pages/divisions">Divisions</NavLink>
-                <NavLink className="nav-link" to="/pages/admin">Admin</NavLink>
+            <div className="navbar-nav flex-row gap-3">
+                <NavLink className="nav-link" to="/Page/about">About</NavLink>
+                <NavLink className="nav-link" to="/Page/contacts">Contacts</NavLink>
+                <NavLink className="nav-link" to="/Page/devisions">Divisions</NavLink>
+                <NavLink className="nav-link" to="/admin">Admin</NavLink>
             </div>
         </div>
     </nav>
